@@ -12,6 +12,7 @@ wget -q -O $VTOY_PATH/EDK2/edk2-edk2-stable201911.zip https://codeload.github.co
 wget -q -P /opt/ https://github.com/ventoy/vtoytoolchain/releases/download/1.0/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu.tar.xz
 wget -q -P /opt/ https://github.com/ventoy/vtoytoolchain/releases/download/1.0/aarch64--uclibc--stable-2020.08-1.tar.bz2
 wget -q -P /opt/ https://github.com/ventoy/vtoytoolchain/releases/download/1.0/mips-loongson-gcc7.3-2019.06-29-linux-gnu.tar.gz
+wget -q -P /opt/ https://github.com/ventoy/musl-cross-make/releases/download/latest/output.tar.bz2 
 
 date +"%Y/%m/%d %H:%M:%S"
 echo downloading environment finish...

@@ -739,7 +739,7 @@ main (int argc, char *argv[])
       || source_dirs[GRUB_INSTALL_PLATFORM_IA64_EFI]
       || source_dirs[GRUB_INSTALL_PLATFORM_ARM_EFI]
       || source_dirs[GRUB_INSTALL_PLATFORM_ARM64_EFI]
-	  || source_dirs[GRUB_INSTALL_PLATFORM_MIPS64EL_EFI]
+	    || source_dirs[GRUB_INSTALL_PLATFORM_MIPS64EL_EFI]
       || source_dirs[GRUB_INSTALL_PLATFORM_RISCV32_EFI]
       || source_dirs[GRUB_INSTALL_PLATFORM_RISCV64_EFI])
     {
