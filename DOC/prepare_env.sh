@@ -1,9 +1,6 @@
 #!/bin/bash
 
-[ -d /opt/diet64 ] || sh ./installdietlibc.sh
-
-[ -d /opt/output ] || tar xf /opt/output.tar.bz2  -C /opt
-mv /opt/output /opt/mips64el-linux-musl-gcc730
+#[ -d /opt/diet64 ] || sh ./installdietlibc.sh
 
 [ -d /opt/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu ] || tar xf /opt/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu.tar.xz  -C /opt
 
