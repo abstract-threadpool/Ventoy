@@ -28,7 +28,7 @@ typedef int (*grub_env_set_pf)(const char *name, const char *val);
 typedef const char * (*grub_env_get_pf)(const char *name);
 typedef int (*grub_env_printf_pf)(const char *fmt, ...);
 
-#define VTOY_MAX_CONF_REPLACE    2
+#define VTOY_MAX_CONF_REPLACE    8
 
 typedef struct ventoy_grub_param_file_replace
 {

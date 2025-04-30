@@ -264,7 +264,7 @@ typedef struct ventoy_img_chunk_list
 
 #pragma pack(1)
 
-#define VTOY_MAX_CONF_REPLACE    2
+#define VTOY_MAX_CONF_REPLACE    8
 #define GRUB_FILE_REPLACE_MAGIC  0x1258BEEF
 #define GRUB_IMG_REPLACE_MAGIC   0x1259BEEF
 

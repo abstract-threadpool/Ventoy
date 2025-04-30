@@ -1257,6 +1257,7 @@ ventoy_wrapper_file_flush_ex_img0(EFI_FILE_HANDLE This, EFI_FILE_IO_TOKEN *Token
 /* Ex version */
 STATIC EFI_STATUS EFIAPI
 ventoy_wrapper_file_flush_ex_img1(EFI_FILE_HANDLE This, EFI_FILE_IO_TOKEN *Token)
+
 {
     (VOID)This;
     (VOID)Token;
@@ -1264,14 +1265,14 @@ ventoy_wrapper_file_flush_ex_img1(EFI_FILE_HANDLE This, EFI_FILE_IO_TOKEN *Token
 }
 
 #define DEF_WRAP_FUNC(n) \
-STATIC EFI_STATUS EFIAPI ventoy_wrapper_file_flush_ex_img#n(EFI_FILE_HANDLE This, EFI_FILE_IO_TOKEN *Token) \
+STATIC EFI_STATUS EFIAPI ventoy_wrapper_file_flush_ex_img##n(EFI_FILE_HANDLE This, EFI_FILE_IO_TOKEN *Token) \
 {\
     (VOID)This;\
     (VOID)Token;\
 	return EFI_SUCCESS;\
 }
 
-#define ITEM_WRAP_FUNC(n) ventoy_wrapper_file_flush_ex_img#n
+#define ITEM_WRAP_FUNC(n) ventoy_wrapper_file_flush_ex_img##n
 
 #if (VTOY_MAX_CONF_REPLACE > 2)
 DEF_WRAP_FUNC(2);
@@ -1295,10 +1296,11 @@ DEF_WRAP_FUNC(7);
 #error "VTOY_MAX_CONF_REPLACE overflow"
 #endif
 
-static EFI_FILE_FLUSH_EX g_img_flush_func[VTOY_MAX_CONF_REPLACE] = 
+static EFI_FILE_FLUSH_EX g_img_flush_func[VTOY_MAX_CONF_REPLACE] =
 {
     ventoy_wrapper_file_flush_ex_img0,
     ventoy_wrapper_file_flush_ex_img1,
+    
 #if (VTOY_MAX_CONF_REPLACE > 2)
     ITEM_WRAP_FUNC(2),
 #endif
