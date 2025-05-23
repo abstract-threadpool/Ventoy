@@ -5,21 +5,22 @@
             <th>BLOB</th>
             <th>File Source</th>
             <th>Desc</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
-        <tr> <td>./BUSYBOX/chmod/vtchmod32</td>          <td rowspan=5>build</td>   <td rowspan=5>Build Instructions:<br/> ./BUSYBOX/chmod/build.sh</td>          </tr>
+        <tr> <td>./BUSYBOX/chmod/vtchmod32</td>          <td rowspan=5>build</td>   <td rowspan=5>Build Instructions:<br/> ./BUSYBOX/chmod/build.sh</td> <td rowspan=5>No action</td>         </tr>
         <tr> <td>./BUSYBOX/chmod/vtchmod64</td>          </tr>
         <tr> <td>./BUSYBOX/chmod/vtchmod64_musl</td>     </tr>
         <tr> <td>./BUSYBOX/chmod/vtchmodaa64</td>        </tr>
         <tr> <td>./BUSYBOX/chmod/vtchmodm64e</td>        </tr>
-        <tr> <td>./cryptsetup/veritysetup32</td>         <td rowspan=2>build</td>   <td rowspan=2>Build Instructions:<br/> ./cryptsetup/cryptsetup-build.txt</td>                                     </tr>
-        <tr> <td>./cryptsetup/veritysetup64</td>         </tr>
-        <tr> <td>./DMSETUP/dmsetup32</td>                <td rowspan=4>build</td>   <td rowspan=4>Build Instructions:<br/> ./DMSETUP/build.txt</td>          </tr>
+        <tr> <td>./cryptsetup/veritysetup32</td>         <td rowspan=2>build</td>   <td rowspan=2>Build Instructions:<br/> ./cryptsetup/cryptsetup-build.txt</td>    <td rowspan=2>Which version of 1.7? Thre are 1.7.0-1.7.5. Include hash.</td>                                  </tr>
+        <tr> <td>./cryptsetup/veritysetup64</td>        </tr>
+        <tr> <td>./DMSETUP/dmsetup32</td>                <td rowspan=4>build</td>   <td rowspan=4>Build Instructions:<br/> ./DMSETUP/build.txt</td>  <td rowspan=4>Add hash for device-mapper-1.02.28-2.el5.src.rpm & dietlibc-0.34.tar.xz</td>         </tr>
         <tr> <td>./DMSETUP/dmsetup64</td>                </tr>
         <tr> <td>./DMSETUP/dmsetupaa64</td>              </tr>
         <tr> <td>./DMSETUP/dmsetupm64e</td>              </tr>
-        <tr> <td>./FUSEISO/vtoy_fuse_iso_32</td>         <td rowspan=3>build</td>   <td rowspan=3>Build Instructions:<br/> ./FUSEISO/build.sh<br/>./FUSEISO/build_aarch64.sh<br/>./FUSEISO/build_libfuse.sh<br/>./FUSEISO/build_libfuse_aarch64.sh </td>                                     </tr>
+        <tr> <td>./FUSEISO/vtoy_fuse_iso_32</td>         <td rowspan=3>build</td>   <td rowspan=3>Build Instructions:<br/> ./FUSEISO/build.sh<br/>./FUSEISO/build_aarch64.sh<br/>./FUSEISO/build_libfuse.sh<br/>./FUSEISO/build_libfuse_aarch64.sh </td> <td rowspan=3>Add hash for fuse-2.9.9</td>                                </tr>
         <tr> <td>./FUSEISO/vtoy_fuse_iso_64</td>         </tr>
         <tr> <td>./FUSEISO/vtoy_fuse_iso_aa64</td>       </tr>
         <tr> <td>./IMG/cpio_arm64/ventoy/busybox/a64</td>  <td>build</td>    <td>Build Instructions:<br/>./BUSYBOX/build.txt  ash</td>      </tr>
